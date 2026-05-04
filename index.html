@@ -645,6 +645,90 @@ footer{background:var(--noir);padding:80px 48px 40px;border-top:1px solid rgba(2
   background: #0e0c08;
 }
 
+
+/* WHY PARMIGIANO */
+.why-parm{
+  background:var(--noir);
+  padding:120px 48px;
+  border-top:1px solid rgba(200,164,90,0.08)
+}
+.why-inner{max-width:1300px;margin:0 auto}
+.why-header{margin-bottom:80px}
+.why-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:rgba(200,164,90,0.08)
+}
+.why-card{
+  background:var(--noir);
+  padding:56px 48px;
+  display:flex;
+  gap:32px;
+  transition:background 0.3s
+}
+.why-card:hover{background:#0f0e09}
+.why-num{
+  font-family:'Bodoni Moda',serif;
+  font-size:13px;font-style:italic;
+  color:var(--gold3);
+  letter-spacing:0.1em;
+  flex-shrink:0;
+  padding-top:4px;
+  min-width:24px
+}
+.why-content{flex:1}
+.why-title{
+  font-family:'Bodoni Moda',serif;
+  font-size:22px;font-weight:400;
+  color:var(--cream);
+  margin-bottom:16px;line-height:1.2
+}
+.why-rule{
+  width:32px;height:1px;
+  background:var(--gold3);
+  margin-bottom:20px
+}
+.why-text{
+  font-size:15px;line-height:1.9;
+  color:rgba(240,232,216,0.55);
+  font-weight:400
+}
+.why-pull{
+  margin-top:80px;
+  padding:64px 0;
+  border-top:1px solid rgba(200,164,90,0.1);
+  text-align:center
+}
+.why-pull-line{
+  width:1px;height:48px;
+  background:linear-gradient(to bottom,var(--gold3),transparent);
+  margin:0 auto 40px
+}
+.why-pull-quote{
+  font-family:'Bodoni Moda',serif;
+  font-size:clamp(22px,2.5vw,36px);
+  font-style:italic;font-weight:300;
+  color:var(--cream);
+  line-height:1.5;
+  max-width:700px;
+  margin:0 auto 24px;
+  letter-spacing:-0.01em
+}
+.why-pull-attr{
+  font-family:'Tenor Sans',sans-serif;
+  font-size:9px;letter-spacing:0.25em;
+  text-transform:uppercase;color:var(--gold)
+}
+
+@media(max-width:768px){
+  .why-parm{padding:72px 20px}
+  .why-grid{grid-template-columns:1fr}
+  .why-card{padding:36px 24px;flex-direction:column;gap:16px}
+  .why-pull{margin-top:48px;padding:40px 0}
+  .why-pull-quote{font-size:20px}
+}
+
 /* LIGHTBOX */
 .lb-overlay{
   position:fixed;inset:0;background:rgba(5,4,3,0.97);z-index:9999;
@@ -753,6 +837,7 @@ footer{background:var(--noir);padding:80px 48px 40px;border-top:1px solid rgba(2
   <a href="#" class="nav-logo">PARMIBAR</a>
   <ul class="nav-links">
     <li><a href="#provenance">Provenance</a></li>
+    <li><a href="#why">The Cheese</a></li>
     <li><a href="#products">Products</a></li>
     <li><a href="#popups">Pop-Ups</a></li>
     <li><a href="#subscribe">Subscribe</a></li>
@@ -768,6 +853,7 @@ footer{background:var(--noir);padding:80px 48px 40px;border-top:1px solid rgba(2
 <div class="nav-mobile-menu" id="mobile-menu">
   <span class="nav-mobile-close" onclick="closeMobileMenu()">Close ×</span>
   <a href="#provenance" onclick="closeMobileMenu()">Provenance</a>
+  <a href="#why" onclick="closeMobileMenu()">The Cheese</a>
   <a href="#products" onclick="closeMobileMenu()">Products</a>
   <a href="#popups" onclick="closeMobileMenu()">Pop-Ups</a>
   <a href="#subscribe" onclick="closeMobileMenu()">Subscribe</a>
@@ -850,6 +936,81 @@ footer{background:var(--noir);padding:80px 48px 40px;border-top:1px solid rgba(2
     <p class="phil-quote">While protein bars multiply, a growing number of nutritionists and athletes are returning to the original — Parmigiano Reggiano. No additives. No manufacturing. 800 years of proof.</p>
     <div class="phil-rule"></div>
     <p class="phil-attr">Crafted in Italy · Reimagined in Dubai</p>
+  </div>
+</section>
+
+
+<!-- WHY PARMIGIANO -->
+<section class="why-parm" id="why">
+  <div class="why-inner">
+    <div class="why-header">
+      <div class="section-label">The Case for Parmigiano</div>
+      <h2 class="section-title">Why nothing else<br>comes <em>close</em></h2>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-num">I</div>
+        <div class="why-content">
+          <h3 class="why-title">Protected by Law</h3>
+          <div class="why-rule"></div>
+          <p class="why-text">Parmigiano Reggiano can only be produced in five provinces of northern Italy — Parma, Reggio Emilia, Modena, Bologna, and Mantua. This is not marketing. It is legally binding under EU PDO law. Any cheese produced outside this zone cannot carry the name. Of the thousands of cheeses made in Italy, fewer than 300 dairies worldwide hold authorisation to make the real thing.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-num">II</div>
+        <div class="why-content">
+          <h3 class="why-title">The Crystalline Secret</h3>
+          <div class="why-rule"></div>
+          <p class="why-text">Those white flecks visible inside every aged piece are tyrosine crystals — amino acids that form only after years of patient maturation. They are a natural signal of quality that cannot be manufactured, accelerated, or faked. More crystals mean deeper flavour, longer aging, and a more complex nutritional profile. They are the mark of time itself, made edible.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-num">III</div>
+        <div class="why-content">
+          <h3 class="why-title">Three Ingredients. Nothing More.</h3>
+          <div class="why-rule"></div>
+          <p class="why-text">By law, authentic Parmigiano Reggiano contains exactly three ingredients: raw milk, salt, and rennet. No colourants, no preservatives, no stabilisers, no additives of any kind. The DOP specification is absolute and monitored on every single wheel by the Consorzio del Parmigiano Reggiano before it is released. In a world of ingredient lists that read like chemistry textbooks, this is almost radical.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-num">IV</div>
+        <div class="why-content">
+          <h3 class="why-title">Broken, Never Cut</h3>
+          <div class="why-rule"></div>
+          <p class="why-text">Parmigiano Reggiano is never sliced with a blade. The traditional method uses a short, almond-shaped knife that is pressed into the rind and twisted — following the natural grain of the cheese and allowing it to fracture along its crystalline structure. The result is irregular, textured, alive. Every PARMIBAR portion is broken by hand at source in Parma using exactly this method. The machine never touches it.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-num">V</div>
+        <div class="why-content">
+          <h3 class="why-title">Naturally Lactose-Free</h3>
+          <div class="why-rule"></div>
+          <p class="why-text">After 12 months of aging, the fermentation process breaks down virtually all lactose into lactic acid. Parmigiano Reggiano aged 12 months or more is naturally and completely lactose-free — not by reformulation or processing, but by the simple passage of time. In the GCC, where lactose intolerance affects a significant proportion of the population, this matters more than most dairy brands acknowledge.</p>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-num">VI</div>
+        <div class="why-content">
+          <h3 class="why-title">800 Years Unchanged</h3>
+          <div class="why-rule"></div>
+          <p class="why-text">The Benedictine monks of the Po Valley first perfected this cheese in the twelfth century. The method — the raw milk, the copper vats, the morning production, the careful salting, the patient aging on wooden shelves — has not materially changed since. Every wheel made today follows the same process as every wheel made in 1200. Time is the ingredient that no modern food manufacturer can buy, license, or replicate.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="why-pull">
+      <div class="why-pull-line"></div>
+      <blockquote class="why-pull-quote">"The most strictly regulated food product in the world — and the most worth it."</blockquote>
+      <div class="why-pull-attr">Consorzio del Parmigiano Reggiano · Est. 1934</div>
+    </div>
+
   </div>
 </section>
 
